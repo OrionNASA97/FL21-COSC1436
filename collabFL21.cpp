@@ -21,6 +21,7 @@ string semester = "Fall 2021";
 
 void showMenu();
 void menu18Smiley(int);
+void menu14Rodriguez(int);
 
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
@@ -68,7 +69,7 @@ int main()
             case 7:                 // Coons - call to function goes here
                 break;
             case 8:                 // Cutshall - call to function goes here
-				break;
+                break;
             case 9:                 // Gilcrease - call to function goes here
                 break;
             case 10:                 // Kaiser - call to function goes here
@@ -79,7 +80,7 @@ int main()
                 break;
             case 13:                 // Ricks - call to function goes here
                 break;
-            case 14:                 // Rodriguez - call to function goes here
+            case 14: menu14Rodriguez(14);   // Function outputs ASCII art 
                 break;
             case 15:                 // Syed - call to function goes here
                 break;
@@ -191,7 +192,40 @@ void menu18Smiley(int numberOfTimes)
             cout << ", ";
         }
     }
+   
+
 
     cout << endl;
     cout << endl;
+    
 }
+
+
+    void menu14Rodriguez(int selection) // outputs ASCII art
+    {
+        if (selection == 14) {
+            cout << "Good choice! Here's some ASCII art" << endl;
+            cout << "#############################################################" << endl;
+            cout << "#                    _                                      #" << endl;
+            cout << "#                  -=\\`\\                                  #" << endl;
+            cout << "#              |\\ ____\\_\\__                              #" << endl;
+            cout << "#            -=\\c`\"\"\"\"\"\"\" \"`)                      #" << endl;
+            cout << "#               `~~~~~/ /~~`\                               #" << endl;
+            cout << "#                 -==/ /                                    #" << endl;
+            cout << "#                   '-'                                     #" << endl;
+            cout << "#                  _  _                                     #" << endl;
+            cout << "#                 ( `   )_                                  #" << endl;
+            cout << "#                (    )    `)                               #" << endl;
+            cout << "#              (_   (_ .  _) _)                             #" << endl;
+            cout << "#                                             _             #" << endl;
+            cout << "#                                            (  )           #" << endl;
+            cout << "#             _ .                         ( `  ) . )        #" << endl;
+            cout << "#           (  _ )_                      (_, _(  ,_)_)      #" << endl;
+            cout << "#         (_  _(_ ,)                                        #" << endl;
+            cout << "#############################################################" << endl;
+
+        }
+
+
+
+    }
